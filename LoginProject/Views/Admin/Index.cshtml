@@ -1,0 +1,27 @@
+@model List<LoginViewModel>
+
+<h1>Giriş Logları</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>IP Adresi</th>
+            <th>Giriş Tarihi</th>
+            <th>Çıkış Tarihi</th>
+            <th>Giriş Süresi (saniye)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Username</td>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+            </tr>
+        }
+    </tbody>
+</table>

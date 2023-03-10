@@ -1,0 +1,31 @@
+@model LoginViewModel
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<main role="main">
+    <form asp-action="Login" method="post">
+        <br />
+        <div class="form-group">
+            <input type="text" class="form-control" id="name" name="Name" placeholder="*Adınız" required>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="text" class="form-control" id="surname" name="Surname" placeholder="*Soyadınız" required>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="text" class="form-control" id="e-mail" placeholder="*E-Posta & Telefon Numarası" required>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="text" class="form-control" id="username" placeholder="*Kullanıcı Adınız" name="Username" required>
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="*Şifreniz" name="Password" required>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Giriş Yap</button>
+    </form>
+</main>
